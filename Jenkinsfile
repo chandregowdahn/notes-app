@@ -14,7 +14,8 @@ pipeline {
             steps {
                 sh '''
                 echo "==== Building Docker Image ===="
-                docker build -t $IMAGE_NAME .
+                docker build -t <dockerhub-username>/notes-app:${BUILD_NUMBER} .
+                docker tag <dockerhub-username>/notes-app:${BUILD_NUMBER} <dockerhub-username>/notes-app:latest
                 '''
             }
         }
