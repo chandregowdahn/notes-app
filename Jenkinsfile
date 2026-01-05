@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Satyams-git/notes-app.git'
+                git branch: 'main', url: 'https://github.com/chandregowdahn/notes-app.git'
             }
         }
 
