@@ -10,12 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/chandregowdahn/notes-app.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh '''
