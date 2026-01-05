@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME     = "notes-app"
         CONTAINER_NAME = "notes-app-container"
         PORT           = "9093"
-        HOST_IP        = "35.154.28.140"
+        HOST_IP        = "13.232.13.177"
     }
 
     stages {
